@@ -10,6 +10,7 @@ import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.EnumActionResult;
 import net.minecraft.util.EnumHand;
+import net.minecraftforge.fml.client.FMLClientHandler;
 import net.minecraftforge.fml.client.event.ConfigChangedEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.gameevent.TickEvent.ClientTickEvent;
@@ -25,9 +26,12 @@ public class AutoFishEventHandler {
     private static final int AUTOFISH_BREAKPREVENT_THRESHOLD = 2;
     private static final double MOTION_Y_THRESHOLD = -0.02d;
     
+    public AutoFishEventHandler() {
+    	minecraft = FMLClientHandler.instance().getClient();
+	}
+    
     @SubscribeEvent
     public void onClientTickEvent(ClientTickEvent event) {
-        this.minecraft = Minecraft.getMinecraft();
         if (ModAutoFish.config_autofish_enable && !this.minecraft.isGamePaused() && this.minecraft.player != null) {
             this.player = this.minecraft.player;
 
