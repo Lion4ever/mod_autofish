@@ -44,7 +44,7 @@ public class AutoFishEventHandler {
 	private static final int REEL_TICK_DELAY = 5;
 	private static final int DROP_BASE_DELAY = 20;
 	private static final int DROP_SEARCH_DELAY = 5;
-	private static final int FIRST_DROP_SLOT = 10; //No hotbar :(
+	private static final int FIRST_DROP_SLOT = 9; //No hotbar :(
 	private static final int AUTOFISH_BREAKPREVENT_THRESHOLD = 2;
 	private static final double MOTION_Y_THRESHOLD = -0.02d;
 	private static final double DROP_CHANCE_DECREMENT = 0.95;
