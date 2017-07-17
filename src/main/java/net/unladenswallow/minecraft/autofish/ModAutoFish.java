@@ -7,7 +7,7 @@ import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
-@Mod(modid = ModAutoFish.MODID, useMetadata = true, acceptedMinecraftVersions="[1.11,1.12)", acceptableRemoteVersions="[1.11,1.12)",
+@Mod(modid = ModAutoFish.MODID, useMetadata = true, acceptedMinecraftVersions="[1.12,1.20)", acceptableRemoteVersions="[1.12,1.20)",
 guiFactory = "net.unladenswallow.minecraft.autofish.AutoFishGuiFactory")
 public class ModAutoFish {
     public static final String MODID = "mod_autofish";
